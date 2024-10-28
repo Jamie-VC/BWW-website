@@ -3,8 +3,15 @@ import BannerIMage from '../assets/bww.jpg'
 import '../styles/Home.css'
 import { MachineList } from '../helpers/MachineList'
 import MachineItem from '../components/MachineItem'
+
 import IndustryItem from '../components/IndustryItem'
 import { IndustryList } from '../helpers/IndustryList'
+
+import DesignItem from '../components/DesignItem'
+import { DesignList } from '../helpers/DesignList'
+
+import ProjectItem from '../components/ProjectItem'
+import { projectList } from '../helpers/ProjectList'
 
 function Home() {
   return (
@@ -54,10 +61,33 @@ function Home() {
 
       <div className='services'>
         <h1> Services </h1>
+        <div className="serviceList">
+          {DesignList.map((designItem, key) => {
+            return(
+              <DesignItem 
+                key={key}
+                image={designItem.image}
+                name={designItem.name}
+              />
+            );
+          })}
+        </div>
       </div>
 
       <div className='projects'>
         <h1> Projects </h1>
+        <div className="projectList">
+          {projectList.map((projectItem, key) => {
+            return (
+            <ProjectItem 
+              key={key}
+              image={projectItem.image} 
+              name={projectItem.name} 
+              description={projectItem.description} 
+            />
+            );
+          })}
+        </div>
       </div>
 
     </div>
