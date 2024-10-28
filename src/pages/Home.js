@@ -3,6 +3,8 @@ import BannerIMage from '../assets/bww.jpg'
 import '../styles/Home.css'
 import { MachineList } from '../helpers/MachineList'
 import MachineItem from '../components/MachineItem'
+import IndustryItem from '../components/IndustryItem'
+import { IndustryList } from '../helpers/IndustryList'
 
 function Home() {
   return (
@@ -37,6 +39,17 @@ function Home() {
 
       <div className='industries'>
         <h1> Industries </h1>
+        <div className="industryList">
+          {IndustryList.map((industryItem, key) => {
+            return (
+              <IndustryItem
+                key={key}
+                image={industryItem.image}
+                name={industryItem.name}
+              />
+            );
+          })}
+        </div>
       </div>
 
       <div className='services'>

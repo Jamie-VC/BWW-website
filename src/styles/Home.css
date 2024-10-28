@@ -81,6 +81,7 @@
 }
 
 
+/* STYLING FOR MACHINE ITEMS */
 .machineItem {
     display: flex;
     width: 900px;
@@ -89,6 +90,9 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     margin: 20px; /* Space between cards */
     overflow: hidden; /* Ensures rounded corners apply to the image */
+}
+.machineItem:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .leftSide {
@@ -113,3 +117,38 @@
     color: #333; /* Darker color for readability */
 }
 
+/* STYLING FOR INDUSTRY ITEMS */
+
+.industryList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adds space between items */
+    justify-content: center;
+    padding: 20px;
+}
+
+.industryItem {
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.industryItem:hover {
+    transform: scale(1.05);
+}
+
+.industryItem .top h1 {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.industryItem .bottom img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
