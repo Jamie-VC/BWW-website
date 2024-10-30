@@ -35,5 +35,10 @@ export const CraneList = [
         name: "Mathew",
         image: Crane,
         tonnage: "20"
+    },
+    {
+        name: "Cheeky",
+        image: Crane,
+        tonnage: "20"
     }
 ]

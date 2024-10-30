@@ -1,0 +1,45 @@
+/* About.css */
+
+.about {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.header {
+  background-color: #0000ff; /* Blue background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.leftSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+}
+
+.rightSide {
+  flex: 2;
+  padding: 20px;
+}
+
+.rightSide h2 {
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+}
+
+.rightSide p {
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.6; /* Improved readability */
+}

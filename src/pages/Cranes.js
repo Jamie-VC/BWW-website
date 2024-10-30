@@ -6,7 +6,10 @@ import { CraneList } from '../helpers/CraneList'
 
 function Cranes() {
   return (
-    <div>
+    <div className='cranesPage'>
+      <div className="header">
+        <h1> Cranes </h1>
+      </div>
        <div className="craneList">
           {CraneList.map((craneItem, key) => {
             return (
